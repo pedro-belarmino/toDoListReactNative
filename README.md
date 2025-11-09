@@ -18,13 +18,34 @@ O sistema permite **criar**, **marcar como concluídas**, **arquivar** e **exclu
 
 ## ⚙️ Funcionalidades
 
-### 🆕 Criar Tarefas
+### Criar Tarefas
 - Tela dedicada à criação de novas tarefas.  
 - Campos:
   - **Nome da tarefa** (obrigatório)
   - **Descrição** (opcional)  
 - Botão **“Criar Tarefa”** envia os dados para o JSON Server via `POST`.  
-- Após criar, o usuário é redirecionado automaticamente para a tela de gerenciamento.  
+- Após criar, o usuário é redirecionado automaticamente para a tela de gerenciamento.
+### Gerenciar Tarefas
+- Lista todas as tarefas não arquivadas.
+- Exibe nome, estado e botões de ação:
+- ✅ Concluir/Reabrir — alterna o valor de completed (PATCH)
+- 📦 Arquivar — define archived = true (PATCH)
+- As tarefas concluídas aparecem com o texto riscado.
+- Botão “Ver Arquivadas” leva à tela de tarefas arquivadas.
+- Botão “Nova Tarefa” leva à tela de criação.
+### Gerenciar Tarefas
+- Tela de Criação de Tarefas
+- Criar nova tarefa
+- Botão “Ver Minhas Tarefas” → vai para a Tela de Gerenciamento
+- Tela de Gerenciamento
+- Exibe lista de tarefas
+- Botão “Nova Tarefa” → volta à Tela de Criação
+- Botão “Ver Arquivadas” → vai para a Tela de Arquivadas
+- Tela de Arquivadas
+- Exibe tarefas arquivadas
+- Botão “Voltar” → retorna à Tela de Gerenciamento
+
+  
 
 **Estrutura da tarefa criada:**
 ```json
