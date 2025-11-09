@@ -35,3 +35,10 @@ O sistema permite **criar**, **marcar como concluídas**, **arquivar** e **exclu
   "completed": false,
   "archived": false
 }
+```
+
+---
+
+#### Como rodar o sistema
+
+depois de clonar, entre no diretorio e digite no terminal: npm run web e npx json-server --watch db.json
