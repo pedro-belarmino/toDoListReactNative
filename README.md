@@ -9,9 +9,9 @@ O sistema permite **criar**, **marcar como concluídas**, **arquivar** e **exclu
 
 - **React Native (Expo)** — Framework principal do aplicativo  
 - **React Navigation (Stack)** — Gerenciamento de telas  
-- **Axios / Fetch API** — Comunicação com o backend  
+- **Axios** — Comunicação com o backend  
 - **JSON Server** — Simulação de banco de dados REST  
-- **Styled Components** (ou **StyleSheet**) — Estilização  
+- **Styled Components** — Estilização  
 - **ActivityIndicator** — Feedback visual durante carregamentos  
 
 ---
